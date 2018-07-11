@@ -8,7 +8,7 @@ using System;
 
 public class triggerEvent : MonoBehaviour {
 	public GameObject music;
-	public int variableInt=0;
+//	public int variableInt=0;
 //	public Collider collider;
 //	[SerializeField] private float m_MaxSpeed = 10f;    
 
@@ -29,7 +29,7 @@ public class triggerEvent : MonoBehaviour {
 //	}
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		variableInt += 10;
+//		variableInt += 10;
 		music.SetActive (true);
 	}
 }
