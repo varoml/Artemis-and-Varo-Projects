@@ -12,7 +12,9 @@ public class urded : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		player.SetActive (false);
-		GameOver.SetActive(true);
+		if (other == player) { 
+			player.SetActive (false);
+			GameOver.SetActive (true);
+		}
 	}
 }
